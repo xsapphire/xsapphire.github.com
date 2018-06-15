@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Jinglin Shan">
+    <title>Jinglin Shan's Homepage</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../common.css" rel="stylesheet">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Raleway|Courgette" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="project-navbar">
+
+</div>
+
+<div class="row full-width header-size afridge-header">
+    <div class="container table-display full-height">
+        <p class="table-cell-display white-font"><span class="project-title ">AfrIdge</span>
+            <br>Your Personal Food Manager </p>
+    </div>
+</div>
+
+<!-- project section -->
+<div class="container">
+    <div class="row ten-margin">
+        <p class="project-page-subtitle"><span class="about-preblock" style="color: #f9b8d9;">&#9646;</span>Introduction</p>
+        <div class="row">
+            <div class="col-md-3 table-display full-height">
+                <div class="table-cell-display">
+                    <img src="afridgeImg/conceptual.png" class="full-width">
+                </div>
+            </div>
+            <div class="col-md-9">
+                <p>In this project I was the principle designer for our team, which created a food-management app
+                    that helps people reduce food waste. We envisioned an AI assistant that could suggest recipes and
+                    generate grocery lists by learning the user's food usage and monitoring the expiration state and
+                    quantity of the food in their fridge.</p>
+                <p class="five-margin">For the purpose of the class, the project ended up with an iOS application which only
+                    implemented the UI to allow users to interact with the App. The design process included:
+                </p>
+                <ul>
+                    <li><a href="#afridge-needfinding">Needfinding Interviews</a></li>
+                    <li><a href="#afridge-solutions">Test Solutions</a></li>
+                    <li><a href="#afridge-video">Concept Video</a></li>
+                    <li><a href="#afridge-lo-fi">Low-fi Prototype</a></li>
+                    <li><a href="#afridge-me-fi">Medium-fi Prototype and Heuristic Evaluation</a></li>
+                    <li><a href="#afridge-hi-fi">High-fi Prototype Implementation</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <!-- Interview needfinding -->
+    <div class="row ten-margin" id="afridge-needfinding">
+        <div class="row full-width display-block">
+            <p><span class="about-preblock" style="color: #f9b8d9;">&#9646;</span>
+                <span class="project-page-subtitle">Needfinding Interviews</span>
+                <a href="afridgeDocs/afridge_brainstorm.pdf" target="_blank" class="float-right lh-thirtysix">
+                    Full Documentation on Brainstorm >></a>
+            </p>
+        </div>
+        <p class="five-margin">From our section topic "home", we first narrowed down our problem domain
+            to "new resident". We interviewed eight people, including both new home buyers
+            and residents who have lived in the same house for many years. Our interview
+            questions were designed to understand the interviewees' needs in renting, buying,
+            maintaining and organizing a house. The interview results are summarized below.</p>
+        <div class="row full-width ten-margin">
+            <div class="col-md-3 col-sm-6">
+                <div class="pink-border">
+                    <img src="afridgeImg/colin.png" class="full-width" alt="">
+                    <p class="quote color">"I just want my life in home to be as convenient
+                        as living in a dorm. "</p>
+                    <p class="grey-para">Colin feels painful to sort dishes and clothes.
+                        He has never solved the problem of organizing the food stored in his
+                        hourse. He also usually forgets to buy healthy food like fruits and
+                        vegetable, and feel too lazy to go out after returning home.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="pink-border">
+                    <img src="afridgeImg/jack.png" class="full-width" alt="">
+                    <p class="quote color">"It's fun to live to other people. "</p>
+                    <p class="grey-para">
+                        Alex and his roommates wished to spend more time outside, and they had been planning
+                        to set up a firepit in their small backyard. He and his wife already had a group of
+                        friends in the city, but they often wouldn't havethe time or energy to make plans
+                        for the weekends.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="pink-border">
+                    <img src="afridgeImg/neha.png" class="full-width" alt="">
+                    <p class="quote color">"We chose Sunnyvale because there are many indian
+                        restaurants, people and groceries there." </p>
+                    <p class="grey-para">
+                        Neha and her husband have a house manager who takes care of the house.
+                        Neither of them like doing household chores, so they pay a cleaner to
+                        help clean their house once a month.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="pink-border">
+                    <img src="afridgeImg/peter.png" class="full-width" alt="">
+                    <p class="quote color">"It's hard transitioning from school to work life."</p>
+                    <p class="grey-para">
+                        Peter lived with his friends (roommates) together but they rarely spend time
+                        together, even on his favorite computer games. He and his roommates were
+                        organized with their house roles despite that he hated laundry.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p class="five-margin">One important takeaway from our interview is that people are generally busy with work, and
+        don't like to take care of the house themselves. They wish to spend more time outside with
+        their friends and do something they like. We extracted three points of view from the insights
+            and brainstormed many solutions for each of them. In the end, we chose to prototype three ideas
+             to test their effectiveness. </p>
+    </div>
+    <hr>
+    <!-- Three prototype -->
+    <div class="row ten-margin" id="afridge-solutions">
+        <div class="row full-width display-block">
+            <p><span class="about-preblock" style="color: #f9b8d9;">&#9646;</span>
+                <span class="project-page-subtitle">Prototypes</span>
+                <a href="afridgeDocs/afridge_solutions.pdf" target="_blank" class="float-right lh-thirtysix">
+                    Full Documentation on User Test >></a>
+            </p>
+        </div>
+        <p class="five-margin">We prepared cards with drawn interfaces. As the testers "click"
+        on some "buttons", we give them the card with the interface of the "next step". After
+        walking through the app, we ask the testers for comments on it. </p>
+        <div class="row full-width ten-margin">
+            <div class="col-md-8">
+                <p class="project-page-label">Prototype 1: Integrated App for Renting Process</p>
+                <img src="afridgeImg/prototype1-1.png" class="full-width" alt="">
+            </div>
+
+            <div class="col-md-4">
+               <p class="grey-para bottom-text">The tester likes the app very much. It is surprising that
+                   she cares about appearance in selecting a housemate. We learned from the test that
+                   the match process should be fed more aspects of data, but not annoy the users. </p>
+            </div>
+        </div>
+        <div class="row full-width ten-margin">
+            <div class="col-md-8">
+                <p class="project-page-label">Prototype 2: Outdoor Scene Generator</p>
+                <img src="afridgeImg/prototype2-1.png" class="full-width">
+            </div>
+
+            <div class="col-md-4">
+                <p class="grey-para bottom-text">The tester really enjoyed the different
+                    settings for music generation. But he
+                    didn't know if the information such as generated games and
+                    activities would be useful. Also he thought the app
+                     too similar to Spotify mood generated playlists.
+                </p>
+            </div>
+        </div>
+        <div class="row full-width ten-margin">
+            <div class="col-md-8">
+                <p class="project-page-label">Prototype 3: Fridge with Computer Vision</p>
+                <img src="afridgeImg/prototype3-1.png" class="full-width">
+            </div>
+
+            <div class="col-md-4">
+               <p class="grey-para bottom-text">
+                    The tester praised the incorporation of handheld device that made the idea
+                    more realistic for the scene. Yet she feels that the swipe-down on 2nd view to
+                    see inventory was not intuitive. She also pointed out recipes should be
+                    filterable by difficulty and cooking/prep time.
+               </p>
+            </div>
+        </div>
+
+        <p style="padding-top: 15px;">After testing our three solutions with prototypes, we decide to move on with the fidge with computer vision.
+        </p>
+    </div>
+    <hr>
+    <!-- Concept Video -->
+    <div class="row ten-margin" id="afridge-video">
+        <div class="row full-width display-block">
+            <p><span class="about-preblock" style="color: #f9b8d9;">&#9646;</span>
+                <span class="project-page-subtitle">Concept Video</span>
+                <a href="afridgeDocs/afridge_storyboards.pdf" target="_blank" class="float-right lh-thirtysix">
+                    Video Storyboard >></a>
+            </p>
+        </div>
+        <div class="row full-width">
+            <iframe class="auto-margin display-block max-full-width" width="560" height="315" src="https://www.youtube.com/embed/xNMSnBnk5qs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+    <hr>
+    <!-- Low fi prototype -->
+    <div class="row ten-margin" id="afridge-lo-fi">
+        <div class="row full-width display-block">
+            <p><span class="about-preblock" style="color: #f9b8d9;">&#9646;</span>
+                <span class="project-page-subtitle">Low-fi Prototype</span>
+                <a href="afridgeDocs/afridge_lofi.pdf" target="_blank" class="float-right lh-thirtysix">Full Report on Prototype and Test >></a>
+            </p>
+        </div>
+        <div class="row full-width ten-margin">
+            <div class="col-md-8">
+                <img src="afridgeImg/low-fi-1.png" class="full-width" alt="UISketchPool"/>
+            </div>
+            <div class="col-md-4">
+                <p class="bottom-text">We first created a UI sketch pool for all parts of the app. Then we selected the
+                    best UI sketch for each component of the app.</p>
+            </div>
+        </div>
+
+        <div class="row full-width ten-margin">
+            <div class="col-md-3">
+                <div class="pink-border">
+                    <img src="afridgeImg/low-fi-2-1.png" class="max-full-width display-block auto-margin" alt="">
+                    <p class="project-page-label">Inventory</p>
+                    <p class="grey-para">Circles make the view dynamic and save the screen space when ordered. </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pink-border">
+                    <img src="afridgeImg/low-fi-2-2.png" class="max-full-width display-block auto-margin" alt="">
+                    <p class="project-page-label">Grocery List</p>
+                    <p class="grey-para">Traditional list form adapts to users' habit, creating convenience
+                     for usage. </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pink-border">
+                    <img src="afridgeImg/low-fi-2-3.png" class="max-full-width display-block auto-margin" alt="">
+                    <p class="project-page-label">Waste</p>
+                    <p class="grey-para">The trash bin provides an intuitive display of waste information. </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pink-border">
+                    <img src="afridgeImg/low-fi-2-4.png" class="max-full-width display-block auto-margin" alt="">
+                    <p class="project-page-label">Recipe</p>
+                    <p class="grey-para">The accordion holds more information while the initial display is concise. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row full-width ten-margin">
+            <div class="col-md-3">
+                <div class="pink-border">
+                    <img src="afridgeImg/low-fi-2-5.png" class="max-full-width display-block auto-margin" alt="">
+                    <p class="project-page-label">Add Item</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pink-border">
+                    <img src="afridgeImg/low-fi-2-6.png" class="max-full-width" alt="">
+                    <p class="project-page-label">Food Detail</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pink-border">
+                    <img src="afridgeImg/low-fi-2-7.png" class="max-full-width" alt="">
+                    <p class="project-page-label">Hamburger Icon</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="pink-border">
+                    <img src="afridgeImg/low-fi-2-8.png" class="max-full-width" alt="">
+                    <p class="project-page-label">Navigation</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row full-width ten-margin">
+            <p>We then created a set of cards for pilot user tests. Testers need to finish
+                three tasks in the test:
+            </p>
+            <ul>
+                <li>Navigate through the four main views via the menu.</li>
+                <li>Edit the grocery list using check boxes, adding button, and swiping deletion. </li>
+                <li>Discover Popups via unlabeled items in inventory and navigate to other windows through
+                    these popups. </li>
+            </ul>
+            <img src="afridgeImg/low-fi-3-1.png" class="full-width" alt=""/>
+
+        </div>
+    </div>
+    <hr>
+    <!-- Me fi prototype -->
+    <div class="row ten-margin full-width" id="afridge-me-fi">
+        <div class="row full-width display-block">
+            <p class="project-page-subtitle"><span class="about-preblock" style="color: #f9b8d9;">&#9646;</span>
+                Medium-fi Prototype and Heuristic Evaluation</p>
+        </div>
+        <div class="row full-width ten-margin">
+            <p>Based on user feedback in the low-fi prototype test, we made several changes to the UI design, and
+                implemented a <a href="https://marvelapp.com/2i2fjce/screen/16441125" target="_blank">medium-fi prototype</a>
+                with marvel for a new round of tests for the three same tasks. With feedback from user testing and
+                in-class <a href="afridgeDocs/afridge_heuristic.pdf" target="_blank">heuristic evaluation</a>, we made final changes
+                    to our UI as below. </p>
+        </div>
+        <div class="row full-width ten-margin">
+            <div class="col-md-6">
+                <img src="afridgeImg/heu-1.png" class="full-width" alt="">
+                <p class="project-page-label">Inventory View</p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="afridgeImg/heu-2.png" class="full-width" alt="">
+                <p class="project-page-label">Iventory Items</p>
+            </div>
+        </div>
+        <div class="row full-width ten-margin">
+            <div class="col-md-6">
+                <img src="afridgeImg/heu-3.png" class="full-width" alt="">
+                <p class="project-page-label">Grocery List (To buy)</p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="afridgeImg/heu-4.png" class="full-width" alt="">
+                <p class="project-page-label">Grocery List (Bought)</p>
+            </div>
+        </div>
+        <div class="row full-width ten-margin">
+            <div class="col-md-6">
+                <img src="afridgeImg/heu-5.png" class="full-width" alt="">
+                <p class="project-page-label">Recipe List</p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="afridgeImg/heu-6.png" class="full-width" alt="">
+                <p class="project-page-label">Recipe Detail</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- High fi -->
+    <div class="row ten-margin" id="afridge-hi-fi">
+        <div class="row full-width display-block">
+            <p class="project-page-subtitle"><span class="about-preblock" style="color: #f9b8d9;">&#9646;</span>High-fi
+                Prototype Implementation</p>
+        </div>
+        <div class="row full-width ten-margin">
+            <div class="col-md-3">
+                <a class="btn orange-outline-btn full-width five-margin" href="afridgeDocs/afridge.ipa">
+                    <i class="fa fa-download"></i>
+                    Download IPA
+                </a>
+                <a class="btn btn-outline-secondary full-width five-margin" href="afridgeDocs/afridge_readme.pdf" target="_blank">
+                    Readme
+                </a>
+            </div>
+            <div class="col-md-9">
+                <p>During our class, we only implemented the UI of the App. We used mock data for the demonstration.
+                    
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div class="row ten-margin">
+        <div class="row full-width display-block">
+            <p class="project-page-subtitle"><span class="about-preblock" style="color: #f9b8d9;">&#9646;</span>
+                Supplemental Materials</p>
+
+            <div class="row ten-margin full-width" style="display: flex;">
+                <div class="col-md-6 full-height">
+                    <a href="afridgeDocs/afridge_report.pdf" target="_blank">
+                        <div class="card full-width" target="_blank">
+                            <img class="card-img-top" width="100%" src="afridgeImg/report-card-thumbnail.png">
+                            <div class="card-block">
+                                <h4 class="project-page-label">Final Report</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 full-height">
+                    <a href="afridgeDocs/afridge_poster.png" target="_blank">
+                        <div class="card full-width">
+                            <img class="card-img-top" width="100%" src="afridgeImg/poster-card-thumbnail.png">
+                            <div class="card-block">
+                                <h4 class="project-page-label">Poster Demonstration</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row ten-margin">
+        <p class="project-page-subtitle"><span class="about-preblock" style="color: #f9b8d9;">&#9646;</span>
+            Acknowledgments</p>
+        <div class="row full-width ten-margin">
+            <div class="col-md-3">
+                <img src="afridgeImg/james_photo.png" class="display-block auto-margin">
+                <div class="card-block text-center-align">
+                    <h4 class="card-title">James Landay</h4>
+                    <p class="card-text"><small class="text-muted">CS147 Instructor</small></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="afridgeImg/edwin_photo.png" class="display-block auto-margin">
+                <div class="card-block text-center-align">
+                    <h4 class="card-title">Edwin Park</h4>
+                    <p class="card-text"><small class="text-muted">Section TA</small></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="afridgeImg/brian_photo.png" class="display-block auto-margin">
+                <div class="card-block text-center-align">
+                    <h4 class="card-title">Brian Rossi</h4>
+                    <p class="card-text"><small class="text-muted">Teammate</small></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="afridgeImg/tarek_photo.png" class="display-block auto-margin">
+                <div class="card-block text-center-align">
+                    <h4 class="card-title">Tarek Abdelghany</h4>
+                    <p class="card-text"><small class="text-muted">Teammate</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="row full-width">
+        <div class="col-md-4">
+            <a href="herstory.html" class="float-left"><< Previous design work: HerStory</a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" class="display-block auto-margin text-center-align">Go Back to Top</a>
+        </div>
+        <div class="col-md-4">
+            <a href="eventmap.html" class="float-right">Next design work: EventMap >></a>
+        </div>
+    </div>
+</div>
+
+
+<div id="footer" class="full-width forty-padding"></div>
+</body>
+<script src="../main.js" type="text/javascript"></script>
+<script src="projectnav.js" type="text/javascript"></script>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+</html>
