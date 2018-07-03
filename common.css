@@ -48,6 +48,10 @@ a:focus{
     padding: 10px 0px;
 }
 
+.restrict-width{
+    max-width: 1200px;
+}
+
 .fa-external-link{
     padding-left: 3px;
     font-size: 14px;
@@ -301,6 +305,13 @@ div#blocks:hover figure:not(:hover) {
     background-color: rgba(0,0,0,0.5);
     width: 100%;
     padding: 15px;
+}
+
+.online-handle{
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #f6736d;
+    font-size: 60px;
+    line-height: 50px;
 }
 
 .contact-prefix{
@@ -558,15 +569,75 @@ div#blocks:hover figure:not(:hover) {
     font-style: italic;
 }
 
+figure{
+    background: #fefefe;
+    border: 2px solid #fcfcfc;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    margin: 0 2px 15px;
+    padding: 15px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.coverFigure:after{
+    position: absolute;
+    content:"";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    background-color:#f6736d;
+    -webkit-transition: opacity 2s;
+    transition: opacity 1s;
+}
+
+
+.coverFigure:hover:after{
+    opacity: .8;
+}
+
+.gallery-cover-title{
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    z-index: 1000;
+    opacity: 0;
+    -webkit-transition: opacity 2s;
+    transition: opacity 1s;
+}
+.cover-title-a{
+    left: 50%;
+    margin:-45px 0 0 -120px;
+    top: 50%;
+}
+
+.cover-title-b{
+    left: 50%;
+    margin-left: -125px;
+    top: 42%;
+}
+
+.cover-title-c{
+    left: 50%;
+    margin-left: -87px;
+    top: 77%;
+}
+
+.coverFigure:hover ~.gallery-cover-title{
+    opacity: 1;
+}
+
 /* pinterest columnar */
-#columns {
+.columns {
     column-width: 320px;
     column-gap: 15px;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 20px auto;
 }
 
-div#columns figure {
+.columns figure {
     background: #fefefe;
     border: 2px solid #fcfcfc;
     box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
@@ -578,93 +649,37 @@ div#columns figure {
     column-break-inside: avoid;
 }
 
-div#columns figure img {
+.columns figure img {
     width: 100%; height: auto;
     border-bottom: 1px solid #ccc;
     padding-bottom: 15px;
     margin-bottom: 5px;
 }
 
-div#columns figure figcaption {
+.columns figure figcaption {
     font-size: .9rem;
     color: #444;
     line-height: 1.5;
 }
 
-div#columns small {
+.columns small {
     font-size: 1rem;
     float: right;
     text-transform: uppercase;
     color: #aaa;
 }
 
-div#columns small a {
+.columns small a {
     color: #666;
     text-decoration: none;
     transition: .4s color;
 }
 
-div#columns:hover figure:not(:hover) {
+/*div#columns:hover figure:not(:hover) {
     opacity: 0.4;
-}
+}*/
 
-@media screen and (max-width: 750px) {
-    #columns { column-gap: 0px; }
-    #columns figure { width: 100%; }
-}
-
-
-#columns {
-    column-width: 320px;
-    column-gap: 15px;
-    width: 90%;
-    max-width: 100%;
-    margin: 50px auto;
-}
-
-div#columns figure {
-    background: #fefefe;
-    border: 2px solid #fcfcfc;
-    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-    margin: 0 2px 15px;
-    padding: 15px;
-    padding-bottom: 10px;
-    transition: opacity .4s ease-in-out;
-    display: inline-block;
-    column-break-inside: avoid;
-}
-
-div#columns figure img {
-    width: 100%; height: auto;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 15px;
-    margin-bottom: 5px;
-}
-
-div#columns figure figcaption {
-    font-size: .9rem;
-    color: #444;
-    line-height: 1.5;
-}
-
-div#columns small {
-    font-size: 1rem;
-    float: right;
-    text-transform: uppercase;
-    color: #aaa;
-}
-
-div#columns small a {
-    color: #666;
-    text-decoration: none;
-    transition: .4s color;
-}
-
-div#columns:hover figure:not(:hover) {
-    opacity: 0.4;
-}
-
-@media screen and (max-width: 750px) {
-    #columns { column-gap: 0px; }
-    #columns figure { width: 100%; }
+@media screen and (max-width: 1200px) {
+    .columns { column-gap: 0px; }
+    .columns figure { width: 100%; }
 }
